@@ -14,7 +14,11 @@ class AuthController extends Controller
 
     public function handleOauthResponse()
     {
-        $user = Socialite::driver('azure-oauth')->user();
+        try {
+            $user = Socialite::driver('azure-oauth')->user();
+        } catch (InvalidStateException $e) {
+            $user = Socialite::driver('azure-oauth')->stateless()->user();
+        }
 
         $authUser = $this->findOrCreateUser($user);
 
