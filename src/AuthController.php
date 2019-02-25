@@ -4,6 +4,7 @@ namespace Metrogistics\AzureSocialite;
 
 use Illuminate\Routing\Controller;
 use Laravel\Socialite\Facades\Socialite;
+use Laravel\Socialite\Two\InvalidStateException;
 
 class AuthController extends Controller
 {
