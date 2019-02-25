@@ -1,5 +1,5 @@
 {
-    "name": "metrogistics/laravel-azure-ad-oauth",
+    "name": "credit-union-2-0-llc/laravel-azure-ad-oauth",
     "description": "Provides single-sign-on ability to Microsoft Azure Active Directory enabled apps.",
     "require": {
         "laravel/framework": ">5.4",
@@ -10,6 +10,10 @@
         {
             "name": "Patrick Stephan",
             "email": "patrick.stephan@metrogistics.com"
+        },
+        {
+            "name": "Alex Taffe",
+            "email": "alex@cu-2.com"
         }
     ],
     "autoload": {
